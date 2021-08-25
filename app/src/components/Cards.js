@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import { Card } from "react-bootstrap";
-import { Button } from "react-bootstrap";
 import { connect } from "react-redux";
 import { fetchTeams } from "../actions";
 
@@ -10,7 +8,7 @@ const Cards = (props) => {
   }, []);
 
   return (
-    <div>
+    <div className="card-container">
       {props.teams.map((team) => (
         <div key={team.id} className="card" style={{ width: "18rem" }}>
           {/* <img src="..." class="card-img-top" alt="..." /> */}
